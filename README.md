@@ -13,7 +13,7 @@ ProjectHub is a full-stack web application that allows users to register, log in
 
 - **Project Management**:
   - Create, update, and delete projects.
-  - Assign users to projects.
+  - Assign users to projects and give them tasks.
 
 - **Responsive Design**:
   - Built with React and CSS for a seamless user experience.
