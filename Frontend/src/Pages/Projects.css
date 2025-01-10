@@ -1,0 +1,185 @@
+/* Projects Page Container */
+.projects-page {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+/* Page Title */
+.projects-page h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Grid Layout for Projects */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+/* Project Card Styling */
+.project-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f3f4 100%);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #34495e;
+    margin: 0 0 12px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 16px;
+    line-height: 1.5;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.project-details span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Due Date Styling */
+.project-details .due-date {
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Default background */
+}
+
+/* Dynamic Due Date Colors */
+.project-details .due-date[data-status="urgent"] {
+    background-color: #ff4444; /* Red for urgent deadlines */
+    color: white;
+}
+
+.project-details .due-date[data-status="warning"] {
+    background-color: #ff9800; /* Orange for approaching deadlines */
+    color: white;
+}
+
+.project-details .due-date[data-status="normal"] {
+    background-color: #4caf50; /* Green for normal deadlines */
+    color: white;
+}
+
+/* Priority Styling */
+.project-details .priority {
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white;
+}
+
+/* Dynamic Priority Colors */
+.project-details .priority[data-priority="high"] {
+    background-color: #ff4444; /* Red for high priority */
+}
+
+.project-details .priority[data-priority="medium"] {
+    background-color: #ff9800; /* Orange for medium priority */
+}
+
+.project-details .priority[data-priority="low"] {
+    background-color: #4caf50; /* Green for low priority */
+}
+
+/* Status Styling */
+.project-details .status {
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white;
+}
+
+/* Dynamic Status Colors */
+.project-details .status[data-status="active"] {
+    background-color: #4caf50; /* Green for active */
+}
+
+.project-details .status[data-status="hold"] {
+    background-color: #ff9800; /* Orange for hold */
+}
+
+.project-details .status[data-status="completed"] {
+    background-color: #2196f3; /* Blue for completed */
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 8px;
+    margin: 8px 0;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+.add-project-button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-project-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-page {
+        padding: 20px;
+    }
+
+    .projects-page h1 {
+        font-size: 2rem;
+    }
+
+    .projects-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+    }
+}

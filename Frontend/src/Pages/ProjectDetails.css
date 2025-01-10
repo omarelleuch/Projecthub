@@ -1,0 +1,135 @@
+/* Back link */
+.back-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 5px 0; /* Add some padding for better clickability */
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* ProjectDetails.css (existing styles) */
+  .project-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-details h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .project-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .project-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .tasks-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .task-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .task-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .task-item strong {
+    color: #333;
+  }
+  
+  .assigned-users {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+  }
+  
+  .assigned-users li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .team-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  .team-member strong {
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .project-details {
+      padding: 10px;
+    }
+  
+    .project-details h1 {
+      font-size: 1.5rem;
+    }
+  
+    .task-item h3 {
+      font-size: 1rem;
+    }
+  
+    .task-item p,
+    .assigned-users li,
+    .team-member p {
+      font-size: 0.8rem;
+    }
+  }
