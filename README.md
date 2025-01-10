@@ -144,6 +144,5 @@ Follow these steps to set up and run the project locally.
 - **PUT `/api/projects/:id`**: Update a project.
 - **DELETE `/api/projects/:id`**: Delete a project.
 
----
 
-## Folder Structure
+
